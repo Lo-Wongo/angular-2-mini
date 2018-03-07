@@ -1,2 +1,12 @@
+<!-- <h1> Product Page </h1>
+<div> We're going to use this div to loop over our data later on</div> -->
+
+
+<!-- add a div element that uses ng-repeat on $scope.productData from the productsCtrl.js
+add three p elements inside the div to show the value of type, color, and size -->
 <h1> Product Page </h1>
-<div> We're going to use this div to loop over our data later on</div>
+<div ng-repeat="product in productData">
+  <p>Type: {{ product.type }}</p>
+  <p>Color: {{ product.color }}</p>
+  <p>Size: {{ product.size }}</p>
+</div>
